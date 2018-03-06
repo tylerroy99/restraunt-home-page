@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Responsive Grid Template</title>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/owl.carousel.min.css" rel="stylesheet"
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <div id="section1">
+        <h1>Roys steakhouse</h1>
+      </div>
+
+      <div id="section2">
+        <img src="img/logo.png" alt="Dummy image">
+      </div>
+
+
+    </header>
+
+    <main>
+      <div id="section3" class="owl-carousel owl-theme">
+        <div><img src="img/chicken.jpg" alt="Dummy image"></div>
+        <div><img src="img/lobster.jpg" alt="Dummy image"></div>
+        <div><img src="img/potatoes.jpg" alt="Dummy image"></div>
+        <div><img src="img/onion.jpg" alt="Dummy image"></div>
+        <div><img src="img/soup.jpg" alt="Dummy image"></div>
+      </div>
+
+      <div id="section4">
+        <p>432 East Atlantic Ave., Delray Beach, FL 33483</p>
+      </div>
+      <div id="section5">
+<p> 11am-10pm
+   happy hour 3-6<p>
+        <div>
+    </main>
+
+    <footer>
+      <div id="section6">
+<p> (561)7565-0902 <p>
+      </div>
+      <div id="section7">Section 7</div>
+    </footer>
+
+  </div>
+
+
+    <!-- first load jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- owl carousel stuff -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            dots: true,
+            items: 1,
+            loop: true,
+            margin: 5,
+            nav: false,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+        })
+      });
+      </script>
+</body>
+</html>
